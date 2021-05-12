@@ -1,0 +1,46 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.1fr 50px 1fr;
+  grid-template-areas: "header header" "nav nav" "section section " "aside aside" "footer footer ";
+  grid-gap: 0.5em 1em;
+  background-color: #422057;
+  background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header  header" "nav  nav" "section  aside" "footer  footer";
+    grid-gap: 1em 2em;
+  }
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+  background-color: yellow;
+}
+
+section {
+  grid-area: section;
+  background-color: #9e2aad;
+}
+
+article {
+  grid-area: article;
+  background-color: #9e2aad;
+}
+
+aside {
+  grid-area: aside;
+  background-color: #9e2aad;
+}
+
+footer {
+  grid-area: footer;
+  background-color: pink;
+}
