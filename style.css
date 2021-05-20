@@ -1,6 +1,11 @@
 header img#head-pool {
   width: 70%;
-  height: 200px;
+  height: auto;
+}
+
+header img#logo {
+  width: 25%;
+  height: auto;
 }
 
 aside img#ddroom {
